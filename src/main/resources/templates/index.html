@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 뷰포트 설정 -->
+<title>수원 스타필드 별마당 도서관 도서 관리 시스템</title> <!-- 페이지 제목 -->
+<link rel="stylesheet" href="/starfield/assets/css/style.css"> <!-- 스타일 시트 링크 -->
+<style>
+/* 도서 테이블의 열 너비 */
+#bookTable th:nth-child(1) { width: 10%; }
+#bookTable th:nth-child(2) { width: 30%; }
+#bookTable th:nth-child(3) { width: 20%; }
+#bookTable th:nth-child(4) { width: 10%; }
+#bookTable th:nth-child(5) { width: 20%; }
+</style>
+</head>
+<body>
+	<div class="container">
+		<h2>수원 스타필드 별마당 도서관 도서 관리 시스템</h2>
+		
+		<!-- 책 추가 폼 -->
+		<form id="bookForm">
+			<input type="hidden" id="bookId"> <input type="text"
+				id="title" placeholder="도서명" required> <input type="text"
+				id="author" placeholder="저자" required> <input type="text"
+				id="price" placeholder="가격" required>
+			<button type="submit">저장</button>
+		</form>
+		
+		<!-- 도서 테이블 -->
+		<table id="bookTable">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>도서명</th>
+					<th>저자</th>
+					<th>가격</th>
+					<th>작업</th>
+				</tr>
+			</thead>
+			
+			 <!-- 도서 목록 -->
+			<tbody></tbody>
+		</table>
+	</div>
+	
+	<!-- Footer -->
+	<div class="footer">&copy; 2024 수원 스타필드 별마당 도서관. All rights reserved.</div>
+	
+	<!-- jQuery 라이브러리 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<!-- 스크립트 파일 -->
+	<script src="/starfield/assets/js/script.js"></script>
+</body>
+</html>
