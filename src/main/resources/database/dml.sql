@@ -33,5 +33,6 @@ INSERT INTO Book (id, title, price, author_id) VALUES (book_seq.NEXTVAL, '기초
 INSERT INTO Book (id, title, price, author_id) VALUES (book_seq.NEXTVAL, '운영체제', 24000, 12);
 
 SELECT * FROM Book;
+SELECT COUNT(*) FROM Book;
 
 COMMIT;

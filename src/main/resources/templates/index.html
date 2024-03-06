@@ -12,12 +12,21 @@
 #bookTable th:nth-child(3) { width: 20%; }
 #bookTable th:nth-child(4) { width: 10%; }
 #bookTable th:nth-child(5) { width: 20%; }
+
+/* 비치중인 책 권 수 */
+#totalBooks {
+    font-size: 18px;
+    text-align: left;
+}
 </style>
 </head>
 <body>
 	<div class="container">
 		<h2>수원 스타필드 별마당 도서관 도서 관리 시스템</h2>
 		
+		<!-- 도서관에 비치된 책 권 수 출력 -->
+		<p id="totalBooks">도서관에 비치된 책 <span th:text="${totalCount}"></span>권</p>
+
 		<!-- 책 추가 폼 -->
 		<form id="bookForm">
 			<input type="hidden" id="bookId"> <input type="text"

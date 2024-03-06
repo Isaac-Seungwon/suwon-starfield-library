@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- book-mapper.xml 파일은 책 관련 데이터베이스 액세스를 위한 매퍼입니다. -->
+<mapper namespace="com.test.jpa.mapper.BookMapper">
+
+	<!-- 결과 매핑 -->
+	<resultMap id="bookResultMap" type="Book">
+		<id column="id" property="id" />
+		<result column="title" property="title" />
+		<result column="author" property="author"
+			typeHandler="org.apache.ibatis.type.StringTypeHandler" />
+	</resultMap>
+
+	<!-- 책 권수 조회 쿼리 -->
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) FROM Book
+	</select>
+
+</mapper>

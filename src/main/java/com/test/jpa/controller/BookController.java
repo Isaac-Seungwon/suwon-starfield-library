@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.test.jpa.dto.AuthorDTO;
-import com.test.jpa.dto.BookDTO;
+import com.test.jpa.domain.AuthorDTO;
+import com.test.jpa.domain.BookDTO;
 import com.test.jpa.model.Author;
 import com.test.jpa.model.Book;
 import com.test.jpa.service.BookService;

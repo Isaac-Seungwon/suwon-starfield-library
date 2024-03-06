@@ -1,4 +1,4 @@
-package com.test.jpa.dto;
+package com.test.jpa.domain;
 
 import lombok.Data;
 
