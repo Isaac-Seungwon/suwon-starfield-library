@@ -1,4 +1,4 @@
---dml
+-- dml
 
 -- Insert sample data into Author table
 INSERT INTO Author (id, name) VALUES (author_seq.NEXTVAL, '랑가 라오 카라남');
